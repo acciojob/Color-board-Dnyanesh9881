@@ -1,1 +1,9 @@
 /*  your css code here. If applicable */
+.container{
+	grid-template-column:repeat(40,1fr);
+	background-color:black;
+}
+.square{
+	background-color:gray;
+	width:10px;
+}
