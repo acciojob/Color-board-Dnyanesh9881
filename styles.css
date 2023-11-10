@@ -12,4 +12,10 @@
 	width:13px;
 	height:13px;
 	display:inline-block;
+	transition:1s;
+}
+.square:hover{
+	background:red;
+	transition: red 2s ease;
+	
 }
