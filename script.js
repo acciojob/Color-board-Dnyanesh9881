@@ -1,8 +1,21 @@
 //your JS code here. If required.
-let cont=document.createElement("div");
-cont.setAttribute("class", "container");
+let cont=document.querySelector(".container");
+
 for(let i=0;i<800;i++){
 	let squar=document.createElement("div");
-	squar.setAttribute("class", "square");
-	cont.appendChild(square);
+	squar.addEventListener("mouseover", onMouseHover)
+	squar.classList="square";
+	cont.appendChild(squar);
 }
+function randomColor() {
+  let color = [];
+  for (let i = 0; i < 3; i++) {
+    color.push(Math.floor(Math.random() * 256));
+  }
+  return 'rgb(' + color.join(', ') + ')';
+} 
+function onMouseHover(event) {
+	
+      event.target.style.fill = randomColor();
+};
+	
