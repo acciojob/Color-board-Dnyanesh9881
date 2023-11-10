@@ -8,14 +8,15 @@
 }
 .square{
 	
-	background-color:rgb(29, 29, 29);
+/* 	background-color:rgb(29, 29, 29); */
 	width:13px;
 	height:13px;
 	display:inline-block;
-	transition:background 1s ease;
+transition:background 0.1s ease;
 }
 .square:hover{
 	background:red;
-/* 	transition:blue 2s ease; */
+
+	
 	
 }
