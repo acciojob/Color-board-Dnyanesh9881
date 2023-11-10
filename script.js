@@ -16,4 +16,5 @@ function randomColor() {
 } 
 function onMouseOver(event) {
 	
-      event.target.style.fill = rgb(253,201,33);
+      event.target.style.fill = randomColor();
+}
