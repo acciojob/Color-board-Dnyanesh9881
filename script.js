@@ -3,7 +3,7 @@ let cont=document.querySelector(".container");
 
 for(let i=0;i<800;i++){
 	let squar=document.createElement("div");
-	squar.addEventListener("mouseover", onMouseHover)
+	squar.addEventListener("mouseover", onMouseOver);
 	squar.classList="square";
 	cont.appendChild(squar);
 }
@@ -14,8 +14,6 @@ function randomColor() {
   }
   return 'rgb(' + color.join(', ') + ')';
 } 
-function onMouseHover(event) {
+function onMouseOver(event) {
 	
-      event.target.style.fill = randomColor();
-};
-	
+      event.target.style.fill = rgb(253,201,33);
